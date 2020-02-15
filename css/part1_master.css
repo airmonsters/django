@@ -1,0 +1,11 @@
+h1{
+    color: blue;
+}
+
+ol
+{
+    border:double;
+    border-width: 5px;
+    border-color: brown;
+    color: blueviolet;
+}
