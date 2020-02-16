@@ -4,6 +4,10 @@ body{
 
 h1{
     border: 1px solid black;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    
 }
 
 h2{

@@ -1,0 +1,14 @@
+body{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+p{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+form{
+    font-size: 1.5em;
+}
