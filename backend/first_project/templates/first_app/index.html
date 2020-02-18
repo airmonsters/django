@@ -4,13 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={%static "css/test.css" %}>
     <title>First App</title>
+    <link rel="stylesheet" href="{% static "css/test.css" %}" />
 </head>
 <body>
-    <h1>This is a picture test123123</h1>
-    <img src={%static "images/1.png"%}  alt="asdad">
-    <H2>ASDA</H2>
+    <h1>Hi welcome to django </h1>
+    <h2>The following is access record</h2>
     
+    <div class="access_record">
+        {% if access_record %}
+            <table>
+                <thead>
+                    <th>Site name</th>
+                    <th>date accessed</th>
+                </thead>
+
+                {%for acc in access_record %}
+                <tr>
+                    <td>{{acc.name}}</td>
+                    <td>{{acc.date}}</td>
+                </tr>
+                {%endfor%}
+            </table>
+
+        {%else%}
+            <p>No access record</p>
+        {%endif%}
+    </div>
+
 </body>
 </html>
